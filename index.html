@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUNO CREATIVEはWeb制作、業務効率化、AI自動化を通じて事業をサポートします。">
+  <title>LUNO CREATIVE | Web & Digital Solutions</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, "Noto Sans JP", sans-serif;
+      color: #172B46;
+      line-height: 1.8;
+      background: #fff;
+    }
+    a { text-decoration: none; color: inherit; }
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    .logo { font-size: 22px; font-weight: bold; letter-spacing: 2px; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    .hero {
+      background: #172B46;
+      color: white;
+      padding: 110px 8%;
+      text-align: center;
+    }
+    .hero p { color: #d5e1f2; margin: 20px 0 30px; }
+    h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.4; }
+    .button {
+      display: inline-block;
+      padding: 12px 28px;
+      background: white;
+      color: #172B46;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    section { padding: 75px 8%; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: 30px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      padding: 28px;
+      border: 1px solid #e5e9ef;
+      border-radius: 10px;
+      background: #fff;
+    }
+    .card h3 { margin-bottom: 12px; }
+    .card p { color: #657286; font-size: 14px; }
+    .works { background: #f5f7fa; }
+    .work-card {
+      max-width: 650px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+    }
+    .work-card a { color: #2463a6; font-weight: bold; }
+    .contact { text-align: center; }
+    footer {
+      background: #172B46;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+    @media(max-width: 700px) {
+      header { flex-direction: column; gap: 12px; }
+      nav { gap: 12px; font-size: 12px; }
+      .hero { padding: 75px 6%; }
+      section { padding: 55px 6%; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LUNO CREATIVE</div>
+    <nav>
+      <a href="#service">サービス</a>
+      <a href="#works">制作実績</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>仕事を、もっとシンプルに。</h1>
+      <p>Web制作・業務効率化・AI自動化で、<br>
+      小さな事業の可能性を広げます。</p>
+      <a href="#works" class="button">制作実績を見る</a>
+    </div>
+
+    <section id="service">
+      <div class="section-title">
+        <h2>OUR SERVICES</h2>
+        <p>サービス紹介</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Web制作</h3>
+          <p>事業やサービスを紹介するWebサイト・LPを制作します。</p>
+        </div>
+        <div class="card">
+          <h3>業務効率化</h3>
+          <p>見積もり計算や入力作業など、日々の業務を便利にします。</p>
+        </div>
+        <div class="card">
+          <h3>AI・自動化</h3>
+          <p>AIやプログラムを活用して、繰り返し作業の効率化を支援します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works">
+      <div class="section-title">
+        <h2>OUR WORKS</h2>
+        <p>制作実績</p>
+      </div>
+      <div class="work-card">
+        <h3>クリーニング自動見積もりツール</h3>
+        <p>部屋数やオプションを選択すると料金を自動計算するWebツールです。</p>
+        <br>
+        <a href="https://luno-creative.github.io/cleaning-estimate-demo/" target="_blank" rel="noopener">デモサイトを見る →</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>HOW WE WORK</h2>
+        <p>制作の流れ</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>01. ご相談</h3>
+          <p>課題やご希望をお聞きします。</p>
+        </div>
+        <div class="card">
+          <h3>02. 制作</h3>
+          <p>内容を確認しながら制作を進めます。</p>
+        </div>
+        <div class="card">
+          <h3>03. 納品</h3>
+          <p>動作確認後、成果物をお渡しします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-title">
+        <h2>CONTACT</h2>
+        <p>お問い合わせ・お仕事のご相談</p>
+      </div>
+      <p>制作のご相談はお気軽にお問い合わせください。</p>
+      <p>お問い合わせ先は準備中です。</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 LUNO CREATIVE. All Rights Reserved.
+  </footer>
+</body>
+</html>
