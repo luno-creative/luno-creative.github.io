@@ -96,6 +96,15 @@
     .cta h2{margin-top:12px}
     .cta p{color:#c6d0d9;max-width:570px;margin:0 auto}
     .cta .actions{justify-content:center}
+    .contact-form{width:min(100%,560px);margin:28px auto 0;text-align:left}
+    .form-field{margin:14px 0}
+    .form-field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px;color:#edf2e8}
+    .form-field label span{font-size:10px;color:#d5eea9;margin-left:5px}
+    .form-field input,.form-field select,.form-field textarea{display:block;width:100%;padding:12px 13px;border:1px solid #536171;border-radius:6px;background:#fffefa;color:#101b2a;font:inherit;font-size:14px}
+    .form-field textarea{resize:vertical}
+    .privacy-check{display:flex;align-items:flex-start;gap:8px;color:#d1d9df;font-size:11px;line-height:1.6;margin:16px 0}
+    .privacy-check input{margin-top:3px}
+    .contact-submit{width:100%;border:0;cursor:pointer;font:inherit;font-weight:750}
     footer{background:#0b1420;color:#aeb9c4;padding:30px 0;font-size:11px}
     .foot{display:flex;justify-content:space-between;align-items:center;gap:15px}
     .foot a{color:#d9e2e8;text-decoration:none}
@@ -252,11 +261,35 @@
         <div class="eyebrow">LET'S TALK</div>
         <h2>まずは、やりたいことを<br>聞かせてください。</h2>
         <p>「ホームページが必要」「見積もりを自動化したい」など、まだ内容が固まっていなくても大丈夫です。ご相談内容を確認し、できることをご案内します。</p>
-        <div class="actions">
-          <span class="btn btn-primary" aria-disabled="true">お問い合わせ窓口準備中</span>
-          <a class="btn btn-ghost" href="#works">4つのデモを見る</a>
-        </div>
-        <p style="font-size:11px;margin-top:18px">※お問い合わせ窓口は準備中です。受付方法が確定次第、このページにフォームを設置します。</p>
+        <form class="contact-form" action="https://formsubmit.co/mobinyo1022@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【LUNO CREATIVE】新しいお問い合わせ">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <div class="form-field">
+            <label for="contact-name">お名前 <span>必須</span></label>
+            <input id="contact-name" type="text" name="お名前" placeholder="例：山田 太郎" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-email">メールアドレス <span>必須</span></label>
+            <input id="contact-email" type="email" name="返信先メールアドレス" placeholder="例：example@gmail.com" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-type">ご相談内容</label>
+            <select id="contact-type" name="ご相談内容">
+              <option value="ホームページ制作">ホームページ制作</option>
+              <option value="見積もり・業務効率化ツール">見積もり・業務効率化ツール</option>
+              <option value="既存サイトの改善">既存サイトの改善</option>
+              <option value="その他・まだ決まっていない">その他・まだ決まっていない</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">お問い合わせ内容 <span>必須</span></label>
+            <textarea id="contact-message" name="お問い合わせ内容" rows="5" placeholder="ご希望やお困りごとをご記入ください。" required></textarea>
+          </div>
+          <label class="privacy-check"><input type="checkbox" required> 入力内容をお問い合わせ対応のために利用することに同意します。</label>
+          <button class="btn btn-primary contact-submit" type="submit">この内容で問い合わせる ↗</button>
+        </form>
+        <p style="font-size:11px;margin-top:18px">送信内容はお問い合わせ対応のために使用します。送信後、初回のみ受付確認メール内の認証操作が必要です。</p>
       </div>
     </div>
   </section>
