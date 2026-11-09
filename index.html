@@ -3,9 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LUNO CREATIVEは、小規模事業者向けにホームページ制作・業務効率化Webツール・自動見積もりシステムを提供します。4業種のデモを公開中。">
+  <meta name="description" content="LUNO CREATIVEは、小規模事業者向けのホームページ制作・自動見積もりフォーム・業務効率化Webツールを制作。4業種の操作デモと料金目安を公開中。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://luno-creative.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="LUNO CREATIVE">
+  <meta property="og:title" content="LUNO CREATIVE｜小規模事業者向けWeb制作・業務効率化ツール">
+  <meta property="og:description" content="小さな事業に、ちょうどいいWeb制作を。ホームページ・自動見積もり・業務効率化ツールを制作します。">
+  <meta property="og:url" content="https://luno-creative.github.io/">
+  <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#101b2a">
   <title>LUNO CREATIVE｜小さな事業に、ちょうどいいWeb制作と業務効率化</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "LUNO CREATIVE",
+    "url": "https://luno-creative.github.io/",
+    "description": "小規模事業者向けのホームページ制作、自動見積もりフォーム、業務効率化Webツールの制作。",
+    "areaServed": "JP",
+    "priceRange": "¥20,000〜"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"まだ作りたい内容が決まっていなくても相談できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。現在のお困りごとや実現したいことを伺い、必要な機能や進め方を一緒に整理します。"}},
+      {"@type":"Question","name":"掲載している料金で必ず制作できますか？","acceptedAnswer":{"@type":"Answer","text":"表示価格は基本的な構成の目安です。ページ数・機能・素材の準備状況を確認し、正式な金額を事前にお見積もりします。"}},
+      {"@type":"Question","name":"公開後の修正や機能追加も依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。内容を確認したうえで、修正・更新・機能追加のお見積もりをご案内します。"}},
+      {"@type":"Question","name":"デモと同じものを導入できますか？","acceptedAnswer":{"@type":"Answer","text":"デモをベースに、実際のサービス内容・料金体系・受付方法に合わせて調整できます。"}}
+    ]
+  }
+  </script>
+
   <style>
     :root{--navy:#101b2a;--navy2:#17283a;--cream:#f6f5ef;--paper:#fffefa;--green:#b9e66a;--muted:#66717d;--line:#e4e5de;--white:#fff}
     *{box-sizing:border-box}
@@ -105,6 +139,16 @@
     .privacy-check{display:flex;align-items:flex-start;gap:8px;color:#d1d9df;font-size:11px;line-height:1.6;margin:16px 0}
     .privacy-check input{margin-top:3px}
     .contact-submit{width:100%;border:0;cursor:pointer;font:inherit;font-weight:750}
+    .price-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+    .price.featured .price-note{color:#c6d0d9}
+    .demo-intro{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:-12px 0 24px;padding:16px 18px;background:#f7f9f2;border:1px solid var(--line);border-radius:8px}
+    .demo-intro p{margin:0;font-size:13px;color:var(--muted)}
+    .scope-note{margin-top:20px;padding:18px 20px;border:1px solid var(--line);border-radius:8px;background:#f8f9f5;font-size:12px;color:#58636c}
+    .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .faq-item{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px}
+    .faq-item h3{font-size:15px;margin:0 0 8px}
+    .faq-item p{font-size:13px;color:var(--muted);margin:0}
+    @media(max-width:800px){.faq-list{grid-template-columns:1fr}.demo-intro{align-items:flex-start;flex-direction:column}}
     footer{background:#0b1420;color:#aeb9c4;padding:30px 0;font-size:11px}
     .foot{display:flex;justify-content:space-between;align-items:center;gap:15px}
     .foot a{color:#d9e2e8;text-decoration:none}
@@ -120,6 +164,7 @@
       <a href="#service">サービス</a>
       <a href="#works">制作例</a>
       <a href="#price">料金目安</a>
+      <a href="#faq">よくある質問</a>
       <a class="nav-cta" href="#contact">相談する ↗</a>
     </nav>
   </div>
@@ -173,8 +218,9 @@
       <div class="section-head">
         <div class="kicker">DEMO GALLERY</div>
         <h2>業種に合わせた、4つの制作デモ。</h2>
-        <p class="lead">実際の操作イメージをご確認いただけるよう、業種別の見積もりデモを公開しています。各デモはサンプルです。貴社のサービス内容に合わせてカスタマイズできます。</p>
+        <p class="lead">実際の操作イメージをご確認いただけるよう、業種別の見積もりデモを公開しています。各デモはサンプルです。貴社のサービス内容・料金体系に合わせてカスタマイズできます。</p>
       </div>
+      <div class="demo-intro"><p>気になる業種のデモを操作して、入力から概算表示までの流れをご確認ください。</p><a class="text-link" href="#contact">自社向けに相談する ↗</a></div>
       <div class="demo-grid">
         <article class="demo-card">
           <div class="demo-icon">⌂</div><span class="tag">HOUSE CLEANING</span>
@@ -213,29 +259,32 @@
       <div class="section-head">
         <div class="kicker">PRICE GUIDE</div>
         <h2>料金の目安</h2>
-        <p class="lead">以下は初回相談用の目安価格です。ページ数・機能・原稿や画像の準備状況に応じて、正式なお見積もりをご案内します。</p>
+        <p class="lead">制作内容ごとの基本料金です。下記の範囲を基本とし、必要な機能やページ数に応じて着手前に個別のお見積もりを提示します。</p>
       </div>
       <div class="price-grid">
         <article class="price">
           <div class="small">まずはWebサイトを作りたい方</div><h3>1ページサイト</h3>
           <div class="amount">30,000<small>円〜</small></div>
-          <ul><li>スマートフォン対応</li><li>サービス・料金・店舗情報</li><li>お問い合わせ導線</li><li>公開サポート</li></ul>
+          <ul><li>トップページ相当の1ページ構成</li><li>サービス・料金・事業者情報の掲載</li><li>お問い合わせフォームへの導線</li><li>スマートフォン表示の最適化</li><li>GitHub Pages等への公開サポート</li></ul>
+          <p class="price-note">文章・写真素材は原則ご提供いただきます。</p>
           <a class="btn btn-ghost" style="color:var(--navy);border-color:#cbd1c8" href="#contact">相談する</a>
         </article>
         <article class="price">
           <div class="small">業務の一部を効率化したい方</div><h3>簡易Webツール</h3>
           <div class="amount">20,000<small>円〜</small></div>
-          <ul><li>用途に合わせた画面設計</li><li>入力・計算などの基本機能</li><li>スマートフォン対応</li><li>動作確認</li></ul>
+          <ul><li>用途に合わせた1画面程度の設計</li><li>入力・選択・自動計算などの基本機能</li><li>スマートフォン表示の最適化</li><li>主要な操作・計算結果の動作確認</li><li>ブラウザで使えるWebページとして納品</li></ul>
+          <p class="price-note">外部システム連携・データ保存は別途お見積もりです。</p>
           <a class="btn btn-ghost" style="color:var(--navy);border-color:#cbd1c8" href="#contact">相談する</a>
         </article>
         <article class="price featured">
           <div class="small">Webサイトと便利機能をまとめて</div><h3>サイト＋ツール</h3>
           <div class="amount">50,000<small>円〜</small></div>
-          <ul><li>1ページサイト</li><li>簡易見積もり・計算機能</li><li>スマートフォン対応</li><li>公開サポート</li></ul>
+          <ul><li>1ページサイトの制作</li><li>簡易見積もり・料金計算機能</li><li>スマートフォン表示の最適化</li><li>フォーム等への問い合わせ導線</li><li>公開サポート・基本動作確認</li></ul>
+          <p class="price-note">サイトとツールをまとめて制作したい方向け。</p>
           <a class="btn btn-primary" href="#contact">相談する</a>
         </article>
       </div>
-      <p class="lead" style="font-size:11px;margin-top:16px">※表示価格は税・外部サービス利用料等を含む最終金額ではありません。仕様確認後に、作業範囲・納期・費用を事前にご提示します。</p>
+      <div class="scope-note"><strong>料金について</strong><br>※表示価格は税別の目安です。ドメイン・有料サーバー・外部サービス利用料、複数ページ構成、複雑な計算ロジック、外部システム連携、継続的な保守・更新作業は含みません。内容を確認し、作業範囲・納期・追加費用を着手前にご案内します。ご予算に合わせた機能の優先順位付けも可能です。</div>
     </div>
   </section>
 
@@ -255,6 +304,22 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FAQ</div>
+        <h2>よくあるご質問</h2>
+        <p class="lead">ご相談前によくいただく内容をまとめました。</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item"><h3>Q. まだ作りたい内容が決まっていなくても相談できますか？</h3><p>はい。現在のお困りごとや実現したいことを伺い、必要な機能や進め方を一緒に整理します。</p></article>
+        <article class="faq-item"><h3>Q. 掲載している料金で必ず制作できますか？</h3><p>表示価格は基本的な構成の目安です。ページ数・機能・素材の準備状況を確認し、正式な金額を事前にお見積もりします。</p></article>
+        <article class="faq-item"><h3>Q. 公開後の修正や機能追加も依頼できますか？</h3><p>はい。内容を確認したうえで、修正・更新・機能追加のお見積もりをご案内します。</p></article>
+        <article class="faq-item"><h3>Q. デモと同じものを導入できますか？</h3><p>デモをベースに、実際のサービス内容・料金体系・受付方法に合わせて調整できます。</p></article>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="wrap">
       <div class="cta">
@@ -264,6 +329,7 @@
         <form class="contact-form" action="https://formsubmit.co/fdd168206957f24ac8a3a4f24bb23ee3" method="POST">
           <input type="hidden" name="_subject" value="【LUNO CREATIVE】新しいお問い合わせ">
           <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://luno-creative.github.io/thanks.html">
           <input type="hidden" name="_autoresponse" value="LUNO CREATIVEへお問い合わせいただき、誠にありがとうございます。お問い合わせを受け付けました。内容を確認のうえ、担当者より改めてご連絡いたします。このメールは自動送信です。">
           <div class="form-field">
             <label for="contact-name">お名前 <span>必須</span></label>
@@ -289,7 +355,7 @@
           <label class="privacy-check"><input type="checkbox" required> 入力内容をお問い合わせ対応のために利用することに同意します。</label>
           <button class="btn btn-primary contact-submit" type="submit">この内容で問い合わせる ↗</button>
         </form>
-        <p style="font-size:11px;margin-top:18px">送信内容はお問い合わせ対応のために使用します。送信後、初回のみ受付確認メール内の認証操作が必要です。</p>
+        <p style="font-size:11px;margin-top:18px">送信内容はお問い合わせへの回答・連絡のために使用します。送信後は受付完了画面が表示され、入力いただいたメールアドレスにも受付確認メールが届きます。</p>
       </div>
     </div>
   </section>
