@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /thanks.html
 
 Sitemap: https://luno-creative.github.io/sitemap.xml
